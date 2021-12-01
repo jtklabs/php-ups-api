@@ -16,7 +16,8 @@ class Service implements NodeInterface
     const S_AIR_2DAY = '02';
     const S_3DAYSELECT = '12';
     const S_GROUND = '03';
-    const S_SURE_POST = '93';
+    const S_SURE_POST_LT1LB = '92'; // SurePost < 1LB
+    const S_SURE_POST = '93'; // Sure Post > 1LB
 
     // Valid international values
     const S_STANDARD = '11';
@@ -104,7 +105,8 @@ class Service implements NodeInterface
         '65' => 'UPS Saver',
         '70' => 'UPS Access Point Economy',
         '74' => 'UPS Express 12:00',
-        '93' => 'UPS Sure Post',
+        '92' => 'UPS SurePost Less than 1LB',
+        '93' => 'UPS SurePost 1LB or Greater',
         '96' => 'UPS Worldwide Express Freight',
     ];
 
